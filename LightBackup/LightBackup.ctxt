@@ -1,0 +1,31 @@
+#BlueJ class context
+comment0.target=LightBackup
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LightBackup\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ LightBackup\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment10.params=line1\ line2
+comment10.target=Vector\ findIntersect3(Line,\ Line)
+comment11.params=ray\ line
+comment11.target=Vector\ findIntersect4(Ray,\ Line)
+comment12.params=ray\ line
+comment12.target=Vector\ findIntersect5(Ray,\ Line)
+comment2.params=
+comment2.target=void\ initial()
+comment3.params=
+comment3.target=void\ updateBoundaries()
+comment4.params=img\ degreeinterval
+comment4.target=void\ showLight(greenfoot.GreenfootImage,\ double)
+comment5.params=x\ y
+comment5.target=void\ setpos(int,\ int)
+comment5.text=\r\n\ \ \ \ public\ void\ showLighty(GreenfootImage\ img,\ double\ degreeinterval)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ IllumWorld\ illumWorld\ \=\ (IllumWorld)\ getWorld();\r\n\ \ \ \ \ \ \ \ ArrayList<Cube>\ cubeList\ \=\ illumWorld.getCubeList();\r\n\ \ \ \ \ \ \ \ double\ degree\ \=\ 0.0;\r\n\ \ \ \ \ \ \ \ while\ (degree\ <\ 360)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ x\ \=\ (double)getX();\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ y\ \=\ (double)getY();\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ xinterval\ \=\ (double)Math.sin(Math.toRadians(degree));\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ yinterval\ \=\ (double)Math.cos(Math.toRadians(degree));\r\n\ \ \ \ \ \ \ \ \ \ \ \ Ray\ ray\ \=\ new\ Ray(new\ Vector(x,y),new\ Vector(xinterval,\ yinterval));\r\n\ \ \ \ \ \ \ \ \ \ \ \ Vector\ intersect\ \=\ new\ Vector(0,0);\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ nearest\ \=\ -1;\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ xyscale\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ for\ (Cube\ cube\ \:\ cubeList)\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ for\ (Line\ line\ \:\ cube.lines)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Vector\ pintersect\ \=\ ray.intersect(line);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ double\ distsquared\ \=\ Math.pow(pintersect.x-x,2)+Math.pow(pintersect.y-y,2);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ (distsquared\ <\ nearest\ ||\ nearest\ \=\=\ -1)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nearest\ \=\ distsquared;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ intersect\ \=\ pintersect;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ x\ \=\ intersect.x;\r\n\ \ \ \ \ \ \ \ \ \ \ \ y\ \=\ intersect.y;\r\n\ \ \ \ \ \ \ \ \ \ \ \ x\ \=\ x-(double)getX()+1000;\r\n\ \ \ \ \ \ \ \ \ \ \ \ y\ \=\ y-(double)getY()+1000;\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ x2\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ double\ y2\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ ((degree\ >\=\ 0\ &&\ degree\ <\ 45)\ ||\ (degree\ >\=\ 315\ &&\ degree\ <\ 360)\ ||\ (degree\ >\=\ 135\ &&\ degree\ <\ 225))\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x2\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y2\ \=\ 0.2*xyscale;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x2\ \=\ 0.2*xyscale;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ y2\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ xlist\ \=\ {(int)Math.round(x-y2),(int)Math.round(x+y2),1000};\r\n\ \ \ \ \ \ \ \ \ \ \ \ int[]\ ylist\ \=\ {(int)Math.round(y-x2),(int)Math.round(y+x2),1000};\r\n\ \ \ \ \ \ \ \ \ \ \ \ //img.fillPolygon(xlist,ylist,3);\r\n\ \ \ \ \ \ \ \ \ \ \ \ img.drawLine((int)Math.round(x),(int)Math.round(y),1000,1000);\r\n\ \ \ \ \ \ \ \ \ \ \ \ degree\ +\=\ degreeinterval;\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ setImage(img);\r\n\ \ \ \ }\r\n
+comment6.params=x\ y\ xoffset\ yoffset\ type
+comment6.target=java.util.ArrayList\ getObjectsInRegion(double,\ double,\ double,\ double,\ java.lang.Class)
+comment7.params=img\ degreeinterval
+comment7.target=void\ showLightz(greenfoot.GreenfootImage,\ double)
+comment7.text=\r\n\ Method\ showLightx\r\n\r\n\ @param\ img\ A\ parameter\r\n\ @param\ degreeinterval\ A\ parameter\r\n
+comment8.params=ray\ line
+comment8.target=Vector\ findIntersect(Ray,\ Line)
+comment9.params=ray\ line
+comment9.target=Vector\ findIntersect2(Ray,\ Line)
+numComments=13

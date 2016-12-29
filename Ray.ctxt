@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ray
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ray\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=source\ direction
+comment1.target=Ray(Vector,\ Vector)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Line\r\n
+comment2.params=l
+comment2.target=Vector\ intersect(Line)
+numComments=3

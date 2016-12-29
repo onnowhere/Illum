@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MazeGenerator
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MazeGenerator\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=x\ y
+comment1.target=MazeGenerator(int,\ int)
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ MazeGenerator\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ generateMaze()
+comment4.params=x\ y
+comment4.target=void\ removeCubeInvisible(int,\ int)
+comment5.params=x\ y
+comment5.target=void\ addCubeInvisible(int,\ int)
+comment6.params=min\ max
+comment6.target=int\ randInt(int,\ int)
+comment7.params=directions
+comment7.target=java.lang.String\ randChoice(java.util.ArrayList)
+numComments=8

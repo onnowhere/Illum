@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Enemy
+comment1.params=charid
+comment1.target=Enemy(char)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ movement()
+comment4.params=z
+comment4.target=void\ mRight(int)
+comment5.params=z
+comment5.target=void\ mDown(int)
+comment6.params=z
+comment6.target=void\ mLeft(int)
+comment7.params=z
+comment7.target=void\ mUp(int)
+comment8.params=directions
+comment8.target=void\ rundirections(java.lang.String[])
+comment9.params=
+comment9.target=void\ reset()
+numComments=10

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Glow
+comment1.params=
+comment1.target=Glow()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=x\ y
+comment3.target=void\ setpos(int,\ int)
+numComments=4
