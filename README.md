@@ -1,5 +1,5 @@
 # Illum
-#### Created by (onplanetnowhere)[https://github.com/onplanetnowhere)]
+#### Created by (onplanetnowhere)[https://github.com/onplanetnowhere]
 
 A game based on light and shadow.
 
